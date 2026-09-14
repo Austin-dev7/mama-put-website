@@ -1,0 +1,13 @@
+# Ignore node modules
+node_modules/
+
+# Ignore npm files
+package.json
+package-lock.json
+
+# Ignore tailwind config files - we used CDN so we don't need them
+tailwind.config.js
+postcss.config.js
+
+# Ignore build folders
+dist/
