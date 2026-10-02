@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mama Put - Taste of Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .dev7-badge {
+      background: linear-gradient(90deg, #22d3ee 0%, #e63946 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      position: relative;
+      padding-bottom: 3px;
+    }
+    .dev7-badge::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #22d3ee 0%, #e63946 100%);
+      opacity: 0.5;
+      border-radius: 2px;
+      animation: dev7-pulse 3s ease-in-out infinite;
+    }
+    @keyframes dev7-pulse {
+      0%, 100% { opacity: 0.3; transform: scaleX(0.9); }
+      50% { opacity: 0.9; transform: scaleX(1.05); }
+    }
+  </style>
 </head>
 <body class="bg-amber-50 text-gray-800 font-sans">
 
@@ -145,24 +173,26 @@
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-white py-10">
-    <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
-      <div>
+<footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8 text-center md:text-left">
+      <div class="md:col-span-2">
         <h3 class="text-xl font-bold mb-4">Mama Put</h3>
         <p>Taste of Home, Every Day</p>
       </div>
       <div>
         <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-        <p>📍 12 Allen Avenue, Ikeja, Lagos</p>
-        <p>📞 09119329899</p>
-        <p>📧 order@mamaput.ng</p>
+        <p>ðŸ“ 12 Allen Avenue, Ikeja, Lagos</p>
+        <p>ðŸ“ž 09119329899</p>
+        <p>ðŸ“§ order@mamaput.ng</p>
       </div>
       <div>
         <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
         <p>Mon - Sun: 8am - 10pm</p>
       </div>
     </div>
-    <p class="text-center mt-8 text-gray-400">© 2026 Mama Put. All rights reserved.</p>
+    <p class="text-center mt-8 text-gray-400">
+      Â© 2026 Mama Put. All rights reserved. · Built by <span class="dev7-badge">Dev7</span>
+    </p>
   </footer>
 
   <script>
